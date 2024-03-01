@@ -1,5 +1,5 @@
 # action.yml
-name: 'VU-ASE-build-env'
+name: 'VU-ASE-build-action'
 description: 'Custom actions for building ASE-modules'
 author: 'Max Gallup <maxgallup@pm.me>'
 branding:
