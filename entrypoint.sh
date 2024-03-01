@@ -1,55 +1,26 @@
 #!/bin/bash
 
 
-echo "Hello github Actions!"
 
+BUILD_DIR="."
+BUILD_COMMAND="make build"
 
 if [ -n "$INPUT_BUILD_DIR" ]; then
-	echo "Found variable build_dir: '$INPUT_BUILD_DIR'"
+	echo "Found variable for build_dir: '$INPUT_BUILD_DIR'"
+	BUILD_DIR="$INPUT_BUILD_DIR"
+
 fi
 
 if [ -n "$INPUT_BUILD_COMMAND" ]; then
-	echo "Found variable build_command: '$INPUT_BUILD_COMMAND'"
+	echo "Found variable for build_command: '$INPUT_BUILD_COMMAND'"
+	BUILD_COMMAND="$INPUT_BUILD_COMMAND"
 fi
 
 
-echo "Current working dir: $(pwd)"
 
-echo "Current env:"
+cd $BUILD_DIR
 
-echo ""
-echo ""
-echo ""
-echo ""
-echo ""
-echo ""
-echo ""
-echo ""
-echo ""
-echo ""
-echo ""
-echo ""
-echo ""
-echo ""
-echo "showing ls"
-
-ls -lah
-
-echo ""
-echo ""
-echo ""
-echo ""
-echo ""
-echo ""
-echo ""
-echo ""
-echo ""
-echo ""
-echo ""
-echo ""
-echo ""
-echo ""
+$BUILD_COMMAND
 
 
-env
-
+exit 0

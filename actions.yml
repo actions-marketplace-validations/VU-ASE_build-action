@@ -1,6 +1,6 @@
 # action.yml
-name: 'ASE-testing'
-description: 'testing custom actions'
+name: 'ASE-builder'
+description: 'Custom actions for building ASE-modules'
 author: 'Max Gallup <maxgallup@pm.me>'
 branding:
   icon: 'box'
@@ -15,5 +15,4 @@ inputs:
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  args:
-    - ${{ inputs.who-to-greet }}
+
