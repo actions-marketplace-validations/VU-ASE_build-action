@@ -20,7 +20,7 @@ fi
 
 cd $BUILD_DIR
 
-$BUILD_COMMAND
+bash -c "$BUILD_COMMAND"
 
 
 exit 0
