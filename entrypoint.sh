@@ -18,6 +18,9 @@ fi
 
 
 
+echo "entrypoint.sh is using shell: $0"
+
+
 cd $BUILD_DIR
 
 bash -c "$BUILD_COMMAND"
