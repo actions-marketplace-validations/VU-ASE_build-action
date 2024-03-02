@@ -1,6 +1,6 @@
 #!/bin/bash
 
-
+export PATH=$PATH:/usr/local/go/bin:/usr/go/bin:/home/dev/go/bin/
 
 BUILD_DIR="."
 BUILD_COMMAND="make build"
@@ -18,7 +18,7 @@ fi
 
 
 
-echo "entrypoint.sh is using shell: $0"
+env
 
 
 cd $BUILD_DIR
